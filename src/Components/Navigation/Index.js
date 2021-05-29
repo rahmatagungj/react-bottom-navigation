@@ -1,19 +1,26 @@
 import React from "react";
 import "./Style.scss";
 import { MdHome, MdAssignmentTurnedIn, MdAccountCircle } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
     <div className="bottom-navigation">
       <ul>
         <li>
-          <MdHome />
+          <Link to="/">
+            <MdHome />
+          </Link>
         </li>
         <li>
-          <MdAssignmentTurnedIn />
+          <Link to="/projects">
+            <MdAssignmentTurnedIn />
+          </Link>
         </li>
         <li>
-          <MdAccountCircle />
+          <Link to="/profile">
+            <MdAccountCircle />
+          </Link>
         </li>
       </ul>
     </div>
