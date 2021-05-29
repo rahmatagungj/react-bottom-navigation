@@ -1,0 +1,14 @@
+.bottom-navigation {
+  background-color: lightgray;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}

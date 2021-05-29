@@ -1,8 +1,9 @@
 import React from "react";
+import "./Style.scss";
 
 const Navigation = () => {
   return (
-    <div>
+    <div className="bottom-navigation">
       <ul>
         <li>Home</li>
         <li>Project</li>
