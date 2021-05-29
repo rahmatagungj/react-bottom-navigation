@@ -1,17 +1,20 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
+import Home from "../../Page/Home/Index";
+import Profile from "../../Page/Profile/Index";
+import Projects from "../../Page/Projects/Index";
 
 const Content = () => {
   return (
     <Switch>
       <Route path="/" exact>
-        <h1>home</h1>
+        <Home />
       </Route>
       <Route path="/projects" exact>
-        <h1>projects</h1>
+        <Projects />
       </Route>
       <Route path="/profile" exact>
-        <h1>profile</h1>
+        <Profile />
       </Route>
     </Switch>
   );
