@@ -1,13 +1,20 @@
 import React from "react";
 import "./Style.scss";
+import { MdHome, MdAssignmentTurnedIn, MdAccountCircle } from "react-icons/md";
 
 const Navigation = () => {
   return (
     <div className="bottom-navigation">
       <ul>
-        <li>Home</li>
-        <li>Project</li>
-        <li>Profile</li>
+        <li>
+          <MdHome />
+        </li>
+        <li>
+          <MdAssignmentTurnedIn />
+        </li>
+        <li>
+          <MdAccountCircle />
+        </li>
       </ul>
     </div>
   );

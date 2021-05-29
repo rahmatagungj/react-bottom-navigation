@@ -1,14 +1,26 @@
 .bottom-navigation {
-  background-color: lightgray;
-  padding: 15px;
+  background-color: rosybrown;
+  padding: 5px 5px;
   position: fixed;
   bottom: 0;
   width: 100%;
+  border-top: 1.2px solid black;
   ul {
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    li {
+      cursor: pointer;
+      svg {
+        width: 30px;
+        height: 30px;
+        color: rgb(255, 255, 255);
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
   }
 }
